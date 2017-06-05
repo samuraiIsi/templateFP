@@ -24,7 +24,9 @@ ul {
 .margin-top--20 {
 	margin-top: 20px;
 }
-
+.padding-top--20 {
+    padding-top: 20%;
+}
 /*#btn__sideNavigation.opened:before {
     content: '\f00d';
 }*/
@@ -195,10 +197,7 @@ h1 {
 }
 
 
-.thumbnail>img, .thumbnail a>img {
-    margin-left: auto;
-    margin-right: auto;
-}
+
 /* --- Animation --- */
 
 #wrapper {
