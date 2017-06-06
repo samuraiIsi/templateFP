@@ -172,16 +172,6 @@ h1 {
     text-decoration: none;
 }
 
-#portfolio .navigation a {
-    background: #e1e1e1;
-    display: block;
-    padding: .3em .8em;
-    color: #fff;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-    color: #222;
-}
-
 #portfolio .navigation li {
     display: inline-block;
     margin-bottom: .5em;

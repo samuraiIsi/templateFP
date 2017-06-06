@@ -122,7 +122,7 @@ var withinViewport = (function() {
         if (checkVisibility(revealer[i])) {
           revealer[i].classList.add('animating');
         }// else {
-        //   revealer[i].classList.remove('revealed');
+        //   revealer[i].classList.remove('animating');
         // }
       }
     };

@@ -8,8 +8,9 @@
     <link rel="stylesheet" type="text/css" href="src/assets/css/animations.css">
     <link rel="stylesheet" type="text/css" href="src/assets/css/bars.css">
     <link rel="stylesheet" type="text/css" href="src/assets/css/boxes.css">
-    <link rel="stylesheet" type="text/css" href="src/assets/css/style.css">   
+    <link rel="stylesheet" type="text/css" href="src/assets/css/style.css">
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1">
+
     <body>
         <aside id="sideNavMenu" class="sidenav">
             <ul id="sideNavMenu__List">
@@ -22,7 +23,7 @@
         </aside>
         <div id="wrapper">
             <div id="btn__sideNavigation" class="container-btn-menu pull-right">
-                <a href="javascript:void(0)" onclick="toggleBtnMenuIcon(this)" >
+                <a href="javascript:void(0)" onclick="toggleBtnMenuIcon(this)">
                     <div class="bar1"></div>
                     <div class="bar2"></div>
                     <div class="bar3"></div>
@@ -228,96 +229,151 @@
                     <div class="row">
                         <div class="col-md-12 text-center">
                             <ul class="navigation">
-                                <li><a href="#" class="active" data-category="all">All</a></li>
-                                <li><a href="#" data-category="vanilla-oop">Vanilla JS OOP</a></li>
-                                <li><a href="#" data-category="vanilla-fp">Vanilla JS FP</a></li>
-                                <li><a href="#" data-category="angular-js">AngularJS</a></li>
-                                <li><a href="#" data-category="angulae-2">Angular 2</a></li>
-                                <li><a href="#" data-category="react">React</a></li>
+                                <li><a href="#" class="btn btn-primary" class="active" data-category="all">All</a></li>
+                                <li><a href="#" class="btn btn-primary" data-category="vanilla-oop">Vanilla JS OOP</a></li>
+                                <li><a href="#" class="btn btn-primary" data-category="vanilla-fp">Vanilla JS FP</a></li>
+                                <li><a href="#" class="btn btn-primary" data-category="angular-js">AngularJS</a></li>
+                                <li><a href="#" class="btn btn-primary" data-category="angulae-2">Angular 2</a></li>
+                                <li><a href="#" class="btn btn-primary" data-category="react">React</a></li>
                             </ul>
                         </div>
-                        <div class="col-md-3 col-sm-6 vanilla-oop">
-                            <div class="animate-view thumbnail betfred flipOutX">
-                                <a href="#">
-                                    <img src="src/assets/images/betfred-logo-240x60.png" alt="Betfred" class="betfred">
+                        <div id="info-wrapper" class="">
+                            <div class="col-md-3 col-sm-6 vanilla-oop">
+                                <a href="#" href="javascript:void(0)" onclick="infoDisplay(this)">
+                                    <div class="animate-view thumbnail betfred flipOutX">
+                                        <img src="src/assets/images/betfred-logo-240x60.png" alt="Betfred" class="betfred">
+                                    </div>
                                 </a>
                             </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6 vanilla-oop">
-                            <div class="animate-view thumbnail totesport flipOutX">
+                            <div class="col-md-3 col-sm-6 vanilla-oop">
                                 <a href="#">
-                                    <img src="src/assets/images/totesport.png" alt="Totesport">
+                                    <div class="animate-view thumbnail totesport flipOutX">
+                                        <img src="src/assets/images/totesport.png" alt="Totesport">
+                                    </div>
                                 </a>
                             </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6 vanilla-oop">
-                            <div class="animate-view thumbnail bg--deg flipOutY">
+                            <div class="col-md-3 col-sm-6 vanilla-oop">
                                 <a href="#">
-                                    <!-- <img src="src/assets/images/totepool.png"> -->
-                                    <span>totepool</span>
+                                    <div class="animate-view thumbnail bg--deg flipOutY">
+                                        <!-- <img src="src/assets/images/totepool.png"> -->
+                                        <span>totepool</span>
+                                    </div>
                                 </a>
                             </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6 vanilla-oop">
-                            <div class="animate-view thumbnail padding-top--20 flipOutY">
+                            <div class="col-md-3 col-sm-6 vanilla-oop">
                                 <a href="#">
-                                    <img src="src/assets/images/bucky-bingo-logo-port-139x86.svg" alt="Bucky Bingo">
+                                    <div class="animate-view thumbnail flipOutY">
+                                        <img src="src/assets/images/bucky-bingo-logo-port-139x86.svg" alt="Bucky Bingo">
+                                    </div>
                                 </a>
                             </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6 vanilla-fp">
-                            <div class="animate-view thumbnail padding-top--20 shake">
+                            <div class="col-md-3 col-sm-6 vanilla-fp">
+                                
+                                    <div class="animate-view thumbnail shake">
+                                        <a href="#">
+                                        <img src="src/assets/images/bogof-logo-151x86.svg" alt="Bogof">
+                                        </a>
+                                    </div>
+                                
+                            </div>
+                            <div class="col-md-3 col-sm-6 angular-js">
                                 <a href="#">
-                                    <img src="src/assets/images/bogof-logo-151x86.svg" alt="Bogof">
+                                    <div class="animate-view thumbnail bg--deg shake">
+                                        <span>Betfred</span>
+                                        <span>Affiliates</span>
+                                    </div>
                                 </a>
                             </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6 angular-js">
-                            <div class="animate-view thumbnail bg--deg shake">
+                            <div class="col-md-3 col-sm-6 angular-js">
                                 <a href="#">
-                                    <span>Betfred</span>
-                                    <span>Affiliates</span>
+                                    <div class="animate-view thumbnail bg--deg pulse">
+                                        <span>Betfred</span>
+                                        <span>Digital Platform</span>
+                                    </div>
                                 </a>
                             </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6 angular-js">
-                            <div class="animate-view thumbnail bg--deg pulse">
+                            <div class="col-md-3 col-sm-6 angular-js">
                                 <a href="#">
-                                    <span>Betfred</span>
-                                    <span>Digital Platform</span>
+                                    <div class="animate-view thumbnail unique-page pulse">
+                                        <span class="border--top--bottom">I. M. G.</span>
+                                        <span>UniquePage</span>
+                                    </div>
                                 </a>
                             </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6 angular-js">
-                            <div class="animate-view thumbnail unique-page pulse">
+                            <div class="col-md-3 col-sm-6 angular-js">
                                 <a href="#">
-                                    <span class="border--top--bottom">I. M. G.</span>
-                                    <span>UniquePage</span>
+                                    <div class="animate-view thumbnail rca rubberBand">
+                                        <span class="border--top--bottom">I. M. G.</span>
+                                        <span>RCA</span>
+                                    </div>
                                 </a>
                             </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6 angular-js">
-                            <div class="animate-view thumbnail vanilla-js rubberBand">
+                            <div class="col-md-3 col-sm-6 angulae-2">
                                 <a href="#">
-                                    <span class="border--top--bottom">I. M. G.</span>
-                                    <span>RCA</span>
+                                    <div class="animate-view thumbnail sbd rubberBand">
+                                        <span class="border--top--bottom">I. M. G.</span>
+                                        <span>Gibraltar SBD</span>
+                                    </div>
                                 </a>
                             </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6 angulae-2">
-                            <div class="animate-view thumbnail sbd rubberBand">
+                            <div class="col-md-3 col-sm-6 angulae-2">
                                 <a href="#">
-                                    <span class="border--top--bottom">I. M. G.</span>
-                                    <span>Gibraltar SBD</span>
+                                    <div class="animate-view thumbnail my-cv rubberBand">
+                                        <span class="border--top--bottom">I. M. G.</span>
+                                        <span>My C.V.</span>
+                                    </div>
                                 </a>
                             </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6 angulae-2">
-                            <div class="animate-view thumbnail my-cv rubberBand">
-                                <a href="#">
-                                    <span class="border--top--bottom">I. M. G.</span>
-                                    <span>My C.V.</span>
-                                </a>
+                            <div id="wrapper-info__detail">
+                                <div class="info_betfred">
+                                    <p>dsfdfsd sdfsdf</p>
+                                    <p>dsfdfsd sdfsdf</p>
+                                    <p>dsfdfsd sdfsdf</p>
+                                    <p>dsfdfsd sdfsdf</p>
+                                    <p>dsfdfsd sdfsdf</p>
+                                </div>
+                                <div class="info_totesport">
+                                    <p>dsfdfsd sdfsdf</p>
+                                    <p>dsfdfsd sdfsdf</p>
+                                    <p>dsfdfsd sdfsdf</p>
+                                    <p>dsfdfsd sdfsdf</p>
+                                    <p>dsfdfsd sdfsdf</p>
+                                </div>
+                                <div class="info_totepool">
+                                    <p>dsfdfsd sdfsdf</p>
+                                    <p>dsfdfsd sdfsdf</p>
+                                    <p>dsfdfsd sdfsdf</p>
+                                    <p>dsfdfsd sdfsdf</p>
+                                    <p>dsfdfsd sdfsdf</p>
+                                </div>
+                                <div class="info_bucky">
+                                    <p>dsfdfsd sdfsdf</p>
+                                    <p>dsfdfsd sdfsdf</p>
+                                    <p>dsfdfsd sdfsdf</p>
+                                    <p>dsfdfsd sdfsdf</p>
+                                    <p>dsfdfsd sdfsdf</p>
+                                </div>
+                                <div class="info_bogof">
+                                    <p>dsfdfsd sdfsdf</p>
+                                    <p>dsfdfsd sdfsdf</p>
+                                    <p>dsfdfsd sdfsdf</p>
+                                    <p>dsfdfsd sdfsdf</p>
+                                    <p>dsfdfsd sdfsdf</p>
+                                </div>
+                                <div class="info_affiliates">
+                                    <p>dsfdfsd sdfsdf</p>
+                                    <p>dsfdfsd sdfsdf</p>
+                                    <p>dsfdfsd sdfsdf</p>
+                                    <p>dsfdfsd sdfsdf</p>
+                                    <p>dsfdfsd sdfsdf</p>
+                                </div>
+                                <div class="info_digital1_platform">
+                                    <p>dsfdfsd sdfsdf</p>
+                                    <p>dsfdfsd sdfsdf</p>
+                                    <p>dsfdfsd sdfsdf</p>
+                                    <p>dsfdfsd sdfsdf</p>
+                                    <p>dsfdfsd sdfsdf</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -367,6 +423,7 @@
             </div>
         </div>
     </body>
-<script type="text/javascript" src="src/app/shared/animations.js"></script>
-<script type="text/javascript" src="src/app/shared/viewport.js"></script>
+    <script type="text/javascript" src="src/app/shared/animations.js"></script>
+    <script type="text/javascript" src="src/app/shared/viewport.js"></script>
+
 </html>
