@@ -1,5 +1,22 @@
 /*---- Animation Elements SideNavMenu ----*/
-
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(29, 29, 29, 0.98);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+#btn__sideNavigation.change {
+    left: 6em;
+}
+#sideNavMenu.side__nav--opened {
+    width: 250px;
+}
 #sideNavMenu__List {
     margin-top: 40px;
     list-style: none;

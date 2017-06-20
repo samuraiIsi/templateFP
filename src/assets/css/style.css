@@ -39,19 +39,6 @@ body {
     background-color: rgba(0,0,0,0.4);
 }
 
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: rgba(29, 29, 29, 0.98);
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -61,7 +48,11 @@ body {
     /*transition: 0.3s;*/
 }
 
-.sidenav a:hover, .offcanvas a:focus{
+.sidenav a:hover {
+    zoom: 102%;
+}
+
+.offcanvas a:focus{
     color: #f1f1f1;
 }
 
@@ -193,17 +184,12 @@ h1 {
 #wrapper {
     margin-left: 0;
 }
-#sideNavMenu {
-    width: 0;
-}
-#sideNavMenu.side__nav--opened {
-    width: 250px;
-}
-
 #wrapper.side__nav--opened {
     margin-left: 250px;
 }
-
+#sideNavMenu {
+    width: 0;
+}
 /* --- Buttons --- */
 
 #btn__sideNavigation {
@@ -218,6 +204,7 @@ h1 {
     font-size: 24px;
     -webkit-border-radius: 100px;
     border-radius: 50%;
+    transition: 0.5s;
 }
 
 #btn__sideNavigation a {
@@ -280,6 +267,10 @@ h1 {
 	height: 60px;
 }
 
+.input-group .form-control {
+    z-index: 0;
+}
+
 @media screen and (max-width: 320px){
     .title-section{
         font-size: 50px;
@@ -308,3 +299,6 @@ textarea.form-control {
     max-height: 115px;
 }
 
+.activescrollspy {
+  color: #fff !important;
+}
