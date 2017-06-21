@@ -90,6 +90,7 @@ body {
     padding: 4em 0;
     background: url(../images/digital-388075_1920.jpg) center center no-repeat;
     background-size: cover;
+    min-height: 620px;
 }
 
 .opacity--8 {
@@ -301,4 +302,62 @@ textarea.form-control {
 
 .activescrollspy {
   color: #fff !important;
+}
+
+div.xh {
+    display: block;
+ /*float:left;*/
+ /*height:40px;
+ width:40px;*/
+ /*border:1px solid black;
+ margin:10px;*/
+ -webkit-transition:all .8s linear;
+ -moz-transition:all .8s linear;
+ -o-transition:all .8s linear;
+ -ms-transition:all .8s linear;
+ transition:all .8s linear;
+ /*margin-top:20px;*/
+}
+
+a:focus[data-filter]{
+    opacity:.8;
+    outline:none;
+}
+
+a[data-filter="vanilla"]:focus ~ div.xh:not([data-filter="vanilla"]){
+  height:0px;
+  width:0px;
+  margin:0;
+  padding: 0 !important;
+}
+
+a[data-filter="angular-js"]:focus ~ div.xh:not([data-filter="angular-js"]){
+  height:0px;
+  width:0px;
+  margin:0;
+  padding: 0 !important;
+}
+
+a[data-filter="jQuery"]:focus ~ div.xh:not([data-filter="jQuery"]){
+  height:0px;
+  width:0px;
+  margin:0;
+  padding: 0 !important;
+}
+
+a[data-filter="angular2"]:focus ~ div.xh:not([data-filter="angular2"]){
+  height:0px;
+  width:0px;
+  margin:0;
+  padding: 0 !important;
+}
+
+a[data-filter="react"]:focus ~ div.xh:not([data-filter="react"]) {
+  height:0px;
+  width:0px;
+  margin:0;
+  padding: 0 !important;
+}
+#box__container > a {
+    margin-bottom: 20px;
 }
