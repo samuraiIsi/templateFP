@@ -9,10 +9,6 @@ var toggleBtnMenuIcon = function() {
     }
 
 }
-// var hideBoxes = function(box) {
-//     var x = document.querySelectorAll(".vanilla");
-//     if(box == "vanilla")
-//     for (var i = 0; i < x.length; i++) {
-//         x[i].style.display = "none";
-//     }
-// }
+var toggleBoxCaption = function(e) {
+	e.classList.toggle('hoverCaption');
+}
